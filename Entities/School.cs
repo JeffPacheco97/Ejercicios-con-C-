@@ -28,18 +28,15 @@ namespace CoreSchool.Entities
         //Create a new constructor method with params in a shortly way. First comes the class, then the variable.
          public School (string name) => (Name) = name;
 
-      
-       
-            
-      
+        public School (int foundationAge, SchoolType classroomType, string name = ""){ 
+
+            (Name, FoundationAge,  ClassroomType)  = (name, foundationAge, classroomType);
+        }
+
         //Allow us to transform the whole class to string in order to print it
         public override string ToString()
         {
             return $"Name: {Name} Foundation age: {FoundationAge} Classroom Type: {ClassroomType}";
         }
-
-
     }
-     
-      
 }
