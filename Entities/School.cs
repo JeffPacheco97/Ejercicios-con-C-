@@ -26,11 +26,16 @@ namespace CoreSchool.Entities
         */
 
         //Create a new constructor method with params in a shortly way. First comes the class, then the variable.
-         public School (string name) => (Name) = name;
+        public School (string name, int foundationAge, SchoolType classroomType){
+             Name = name;
+             FoundationAge = foundationAge;
+             ClassroomType = classroomType;
+        }
 
-        public School (int foundationAge, SchoolType classroomType, string name = ""){ 
 
-            (Name, FoundationAge,  ClassroomType)  = (name, foundationAge, classroomType);
+        public School (string name, int foundationAge){ 
+
+            (Name, FoundationAge)  = (name,foundationAge);
         }
 
         //Allow us to transform the whole class to string in order to print it
