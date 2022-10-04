@@ -14,6 +14,8 @@ namespace CoreSchool.Entities
         //A faster way to get and set this variable with the user input
         public int FoundationAge {get; set;}
         //The shortcout to write this property is "prop" and TAB
+        public string City { get; set; }
+        public string Country {get; set;}
         public SchoolType ClassroomType { get; set; }
 
 
@@ -36,6 +38,11 @@ namespace CoreSchool.Entities
         public School (string name, int foundationAge){ 
 
             (Name, FoundationAge)  = (name,foundationAge);
+        }
+        //Constructor with optional params
+        public School (string name, int foundationAge, SchoolType classroomType, string city = "", string country = ""){
+             (Name, FoundationAge, ClassroomType,  City, Country)  = (name, foundationAge, classroomType, city, country);
+    
         }
 
         //Allow us to transform the whole class to string in order to print it
