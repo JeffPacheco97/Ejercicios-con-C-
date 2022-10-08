@@ -17,15 +17,15 @@ namespace CoreSchool.Entities
         public string City { get; set; }
         public string Country {get; set;}
         public SchoolType ClassroomType { get; set; }
+        public List<Course> ListCourses { get; set; }
 
 
-
-       /*Create a new constructor method with params. This one must be called as classname
+       //Create a new constructor method with params. This one must be called as classname
         public School (string name){
-            this.name = name;
+            Name = name;
 
         }
-        */
+        
 
         //Create a new constructor method with params in a shortly way. First comes the class, then the variable.
         public School (string name, int foundationAge, SchoolType classroomType){
