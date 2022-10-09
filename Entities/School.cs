@@ -3,11 +3,8 @@
 namespace CoreSchool.Entities
 {
 
-    class School
+    public class School
     {
-
-
-       
         
         //Constructor method is used when the variable is private → which is a good practice
         public string Name { get; set; }
