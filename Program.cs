@@ -37,7 +37,6 @@ namespace CoreSchool
 
             //Call PrintCoursesSchool method
             PrintCoursesSchool(engine.School, name);
-
         }
 
         private static bool Predicate(Course curobj)
@@ -51,14 +50,12 @@ namespace CoreSchool
             //Draw a line with the DrawLine method from the static Printer class
             Printer.DrawTitle(name, 30);
 
-
-            //Print every course in 
-            foreach (var course in school.ListCourses)
-            {
+            //Print every course in ListCourses
+            foreach (var course in school.ListCourses){
                 WriteLine($"Name: {course.name}, Id: {course.uniqueId} ");
-
             }
-           
+
+            
         }
 
             
