@@ -13,8 +13,18 @@ namespace CoreSchool.Entities
         public string uniqueId { get; private set; }
         //Set name and get a shift
         public ShiftTypes shift { get; set; }
+
+        //Create a list where to put the subject to learn
+        public List<Subject> Subjects { get; set; }
+        
+        //Create a list where to put the studens learning
+        public List<Student> Students { get; set; }
+
+
         //Course constructor, generates a random ID with a build-in method 
         public Course() => uniqueId = Guid.NewGuid().ToString();
+
+        
     
     }
 }

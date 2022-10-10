@@ -5,6 +5,9 @@ namespace CoreSchool.Entities
 
     public class School
     {
+        //Set and get an unique Id
+        public string uniqueId { get; private set; } = Guid.NewGuid().ToString();
+
         
         //Constructor method is used when the variable is private → which is a good practice
         public string Name { get; set; }
