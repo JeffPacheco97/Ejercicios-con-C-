@@ -24,7 +24,7 @@ namespace CoreSchool.Entities
         //Course constructor, generates a random ID with a build-in method 
         public Course() => uniqueId = Guid.NewGuid().ToString();
 
-        
+
     
     }
 }

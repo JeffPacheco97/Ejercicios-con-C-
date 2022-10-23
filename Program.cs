@@ -17,17 +17,17 @@ namespace CoreSchool
 
             //Welcome users and request name
             WriteLine("Welcome to Booky, your favorite virtual classroom creator.\nPlease, enter your classroom name: ");
-            var name ="AbC";
+            var name = "abc";
 
 
             //Request foundation age
             WriteLine($"Now, please enter the foundation age of {name}:");
-            int foundationAge = Convert.ToInt32(3);
+            int foundationAge = Convert.ToInt32("22");
 
 
             //Request type of room
             WriteLine("What type of room do you want?\n 1- Personal\n 2- Two\n 3- Group ");
-            int classType = Convert.ToInt32(3);
+            int classType = Convert.ToInt32("3");
             SchoolType classroomType = (SchoolType)classType;
 
           
